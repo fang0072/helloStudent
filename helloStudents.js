@@ -1,24 +1,21 @@
 'use strict'
 
-const students = require('./students.json')
+const students=require('./students.json');
+
+console.log(students)
 
 students.forEach(student => {
-    const student = student.firstName + student.lastName;
-    say('Hello' + firstName + lastName)
+    console.log(`Hello ${student.firstName} ${student.lastName}`);
+
 });
 
-let sayHello = students.forEach(student);
+let newStudent =  students.filter(student => {
+    return student.lastName.toLocaleLowerCase(lastName.indexOf()==0);
+});
 
-console.log(sayHello);
+console.log("'Count of last name starting with D is'" + newStudent.charAt() +"'");
 
-const filterName = (student) => {
-    return student.filter(word => {
-        student.lastName == 'D' 
-        let index = student.filter;
-    });
-};
 
-console.log(`Count of last names starting with ${index} is ${filterName.charAt(index)}`);
 
 
 
